@@ -1,0 +1,126 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background: #244c44;
+}
+
+.container {
+  flex: 1;
+  padding-left: 50px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 15%;
+  padding: 0 40px;
+  background-color: #244c44;
+}
+
+hr {
+  width: 100%;
+}
+
+.logo {
+  flex: 0 0 200px;
+}
+
+.logo img {
+  width: 70%;
+  height: auto;
+}
+
+nav {
+  flex: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f7c114;
+  font-size: 25px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  flex: 1;
+}
+
+main b {
+  color: #f7c114;
+  font-size: 90px;
+}
+
+main p {
+  color: white;
+  font-size: 30px;
+}
+
+main i {
+  color: #f7c114;
+}
+
+.our-service,
+.first-page,
+.our-service-buy-sell,
+.our-service-custody,
+.our-service-Delivery {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.our-service-future,
+.partnership {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-container {
+  flex: 1;
+  padding-right: 20px;
+}
+
+footer {
+  width: 100%;
+  background-color: #244c44;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-row img {
+  width: 100px;
+}
+
+h3,
+h2 {
+  font-size: 30px;
+  color: #f7c114;
+}
