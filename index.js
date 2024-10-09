@@ -1,18 +1,14 @@
-document
-  .getElementById("our-services")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    window.scrollBy({
-      top: window.innerHeight,
-      behavior: "smooth",
-    });
+function goto(node) {
+  node.scrollIntoView({
+    behavior: "smooth",
   });
-document
-  .getElementById("Partnership")
-  .addEventListener("click", function (event) {
+}
+
+document.querySelectorAll(".section-link").forEach(function (node) {
+  node.addEventListener("click", function (event) {
     event.preventDefault();
-    window.scrollTo({
-      top: document.body.scrollHeight,
-      behavior: "smooth",
-    });
+    const targetId = node.getAttribute("href").substring(1);
+    const targetNode = document.getElementById(targetId);
+    goto(targetNode);
   });
+});

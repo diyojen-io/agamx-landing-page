@@ -1,5 +1,6 @@
 html,
 body {
+  width: 100%;
   height: 100%;
   margin: 0;
   display: flex;
@@ -7,34 +8,71 @@ body {
   background: #244c44;
 }
 
-.container {
-  flex: 1;
-  padding-left: 50px;
-}
-
 header {
   display: flex;
+  position: fixed;
+  justify-content: space-between;
   align-items: center;
-  height: 15%;
-  padding: 0 40px;
+  padding: 0 5vw;
   background-color: #244c44;
 }
 
-hr {
+main {
+  padding-top: 80px;
+}
+
+.container {
+  padding: 3%;
   width: 100%;
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10em;
+  flex: 1;
+}
+
+.side-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.text-content {
+  width: 50%;
+  color: white;
+}
+
+.image-content {
+  width: 40%;
+  margin-right: 30px;
+}
+.images-content {
+  width: 20%;
+  margin-right: 30px;
+}
+.side-container h1 {
+  color: #f7c114;
+  font-size: 4vw;
+  margin-bottom: 10px;
+}
+
+.side-container p {
+  font-size: 2vw;
+  color: white;
 }
 
 .logo {
-  flex: 0 0 200px;
+  flex: 0 0 7vw;
 }
 
 .logo img {
-  width: 70%;
+  width: 100%;
   height: auto;
-}
-
-nav {
-  flex: 1;
 }
 
 nav ul {
@@ -46,81 +84,27 @@ nav ul {
 }
 
 nav ul li {
-  margin-left: 20px;
+  margin-left: 2vw;
 }
 
 nav a {
   text-decoration: none;
   color: #f7c114;
-  font-size: 25px;
+  font-size: 1.5vw;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-main {
-  flex: 1;
-}
-
-main b {
-  color: #f7c114;
-  font-size: 90px;
-}
-
-main p {
-  color: white;
-  font-size: 30px;
-}
-
-main i {
-  color: #f7c114;
-}
-
-.our-service,
-.first-page,
-.our-service-buy-sell,
-.our-service-custody,
-.our-service-Delivery {
-  display: flex;
-  justify-content: space-between;
-  height: 100vh;
-}
-
-.our-service-future,
-.partnership {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.text-container {
-  flex: 1;
-  padding-right: 20px;
-}
-
-footer {
+img {
   width: 100%;
-  background-color: #244c44;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  height: auto;
 }
 
-.image-row {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+h1 {
+  font-size: 3vw;
 }
 
-.image-row img {
-  width: 100px;
+h3 {
+  color: #f7c114;
 }
-
-h3,
-h2 {
-  font-size: 30px;
+i {
   color: #f7c114;
 }
